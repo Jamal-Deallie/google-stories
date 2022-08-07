@@ -173,10 +173,10 @@ p {
 
 @font-face {
   font-family: 'Google Sans';
-  src: url('./fonts/ProductSans-Bold.ttf') format('truetype');
+  src: url('../src/assets/fonts/ProductSans-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Google Sans Text';
-  src: url('./fonts/ProductSans-Medium.ttf') format('truetype');
+  src: url('../src/assets/fonts/ProductSans-Medium.ttf') format('truetype');
 }

@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { HeroContainer } from '../../containers';
+import { HeroContainer, FeatureContainer } from '../../containers';
 import { FeatureSlides } from '../../components';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap } from 'gsap';
+import { Loader, Footer } from './styles';
 
 export default function MainContainer() {
   const [loader, setLoader] = useState(true);
@@ -18,12 +19,12 @@ export default function MainContainer() {
   }, []);
 
   return loader ? (
-    <div className='loader' />
+    <Loader />
   ) : (
     <div>
       <HeroContainer />
-      <FeatureSlides />
-      <div className='footer'>Build your ideal story today.</div>
+      <FeatureContainer />
+      <Footer>Build your ideal story today.</Footer>
     </div>
   );
 }

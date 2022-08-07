@@ -5,17 +5,18 @@ import {
   HeroPhoneBlock,
   HeroHeader,
 } from '../../components';
+import { HeroSection, HeroMedia } from './styles';
 
 export default function HeroContainer() {
   return (
-    <div className='hero-container'>
+    <HeroSection className='hero-container'>
       <HeroHeader />
-      <div className='hero-media'>
+      <HeroMedia className='hero-media'>
         <HeroCollage />
         <HeroPhoneBlock />
-      </div>
+      </HeroMedia>
       <HeroUsedBy />
       <HeroFooter />
-    </div>
+    </HeroSection>
   );
 }

@@ -1,9 +1,15 @@
-export default function FeatureSlides() {
-
-    return (
-
-        <div>
-            <h1>Features Slides</h1>
-        </div>
-    )
+import React, { useCallback, useRef, useEffect } from 'react';
+import { Slide, SlideTitle, SlideDesc } from './styles';
+export default function FeatureSlide({
+  title,
+  description,
+  updateActiveImage,
+  index,
+}) {
+  return (
+    <Slide>
+      <SlideTitle className='feature-slide-title'>{title}</SlideTitle>
+      <SlideDesc className='feature-slide-description'>{description}</SlideDesc>
+    </Slide>
+  );
 }

@@ -1,6 +1,7 @@
+import { MainPage } from './views';
 
 function App() {
-  return <div className='App'>Testing React</div>;
+  return <MainPage />;
 }
 
 export default App;
